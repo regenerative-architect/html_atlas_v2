@@ -1,0 +1,130 @@
+<!DOCTYPE html><!-- Zero-Harm & Anti-Inversion: this tool is built to inform and empower, never to manipulate, surveil, or coerce. No hidden data collection, no dark patterns, no auto-send. Any use of this file against those aims contradicts its design. --><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Accessible input validation and typed submissions"><meta name="theme-color" content="#08111b"><meta name="color-scheme" content="dark light"><title>Advanced forms &amp; data entry | Next-Generation HTML Atlas</title><link rel="manifest" href="../manifest.webmanifest"><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><style>
+:root{color-scheme:dark;--bg:#08111b;--panel:#102234;--panel2:#183147;--edge:#38566b;--text:#e9f4f7;--muted:#b0c5d0;--accent:#80e5be;--focus:#ffd073;--red:#ffad9b;font:16px/1.65 system-ui,-apple-system,Segoe UI,Arial,sans-serif}*{box-sizing:border-box}[hidden]{display:none!important}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 84% 0%,#16354a 0,transparent 42%),var(--bg);color:var(--text)}a{color:var(--accent)}a:hover{text-decoration-thickness:2px}.skip{position:absolute;top:-9rem;left:1rem;background:var(--focus);color:#111;padding:.7rem;z-index:10}.skip:focus{top:1rem}.wrap{max-width:1180px;margin:auto;padding:1rem clamp(1rem,3.5vw,2rem) 4rem}.top{position:sticky;top:0;z-index:5;background:#08111bef;backdrop-filter:blur(8px);border-bottom:1px solid var(--edge)}.top>.wrap{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;padding:.55rem 1rem}.brand{font-weight:800;text-decoration:none;color:var(--accent)}.top nav{display:flex;gap:1rem;flex-wrap:wrap}.top nav a{font-size:.9rem}.hero{padding:2.4rem 0 1.1rem}.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:.77rem;color:var(--accent);font-weight:800}h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.13;margin:.3rem 0 .8rem}h2{font-size:1.4rem;margin:0 0 .7rem}h3{margin:.25rem 0}.lead{max-width:75ch;font-size:1.1rem;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:1rem}.card,section.panel,details.panel{border:1px solid var(--edge);border-radius:16px;background:linear-gradient(145deg,var(--panel),#0b1b2a);padding:1.2rem;margin:0 0 1rem}.card{display:flex;flex-direction:column;gap:.5rem}.card p{margin:.1rem 0 .8rem;flex:1;color:var(--muted)}.tag{display:inline-block;width:fit-content;border:1px solid #3c7668;color:var(--accent);border-radius:99px;padding:.1rem .65rem;font-size:.77rem;letter-spacing:.02em}.muted,.hint,small{color:var(--muted)}.callout{border-left:4px solid var(--focus);padding:.8rem 1rem;background:#272b2c;border-radius:6px;margin:1rem 0}.warning{border-left-color:var(--red)}button,.btn,input,select,textarea{font:inherit}button,.btn{background:#1b584b;color:#f6fffb;border:1px solid #70b89a;border-radius:9px;padding:.52rem .8rem;cursor:pointer;display:inline-block;text-decoration:none}button:hover,.btn:hover{background:#236c59}button:disabled{opacity:.55;cursor:not-allowed}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}input,select,textarea{max-width:100%;background:#091824;color:var(--text);border:1px solid #688194;border-radius:8px;padding:.55rem;width:100%}input[type=checkbox],input[type=radio]{width:auto;accent-color:var(--accent)}label{display:block;font-weight:650;margin:.65rem 0 .3rem}.toolbar{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;margin:1rem 0}.toolbar>*{flex-shrink:0}output,.status{display:block;padding:.6rem;background:#112c36;border:1px solid #496773;border-radius:9px;min-height:2.7rem;white-space:pre-wrap;overflow-wrap:anywhere}.status:empty:before{content:'Ready.';color:var(--muted)}pre{overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;background:#020b12;color:#daf5e7;padding:1rem;border-radius:9px;border:1px solid var(--edge);font-size:.85rem}code{color:#d5f5c5}details>summary{cursor:pointer;font-weight:750;padding:.35rem 0}table{border-collapse:collapse;width:100%;display:block;overflow-x:auto}th,td{padding:.55rem;border-bottom:1px solid var(--edge);text-align:left}th{color:var(--accent)}.meter{height:12px;border:1px solid var(--edge);border-radius:20px;background:#06101b;overflow:hidden}.fill{background:var(--accent);height:100%;width:0;transition:width .2s}.row{display:flex;gap:.7rem;align-items:center;flex-wrap:wrap}.row>*{max-width:100%}.row input{width:auto;min-width:120px;flex:1}.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,310px),1fr));gap:1rem}.demo{background:#081b25;border:1px dashed #528a80;border-radius:12px;padding:1rem;min-height:110px}.demo p:first-child{margin-top:0}.pill{border:1px solid #538879;border-radius:30px;padding:.15rem .5rem;color:var(--accent);font-size:.8rem}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.fineprint{font-size:.85rem;color:var(--muted)}.toc{display:flex;gap:.5rem;flex-wrap:wrap}.toc a{padding:.25rem .5rem;border:1px solid var(--edge);border-radius:8px}.chart{width:100%;height:230px;background:#0a1721;border:1px solid var(--edge);border-radius:8px}footer{border-top:1px solid var(--edge);margin-top:2rem;padding-top:1rem;font-size:.85rem;color:var(--muted)}@media(max-width:620px){.top{position:static}.card,section.panel{padding:1rem}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}@media print{:root{color-scheme:light;--bg:#fff;--text:#111;--panel:#fff;--edge:#aaa;--muted:#333;--accent:#064a32}body{background:white;color:#111}.top,.no-print,button,.btn{display:none!important}.wrap{max-width:none;padding:0}.card,section.panel,details.panel{background:white;color:#111;break-inside:avoid;border-color:#888}details{display:block}pre{color:#111;background:#eee}.demo,output,.status{color:#111;background:white}a{color:#064a32}}
+</style></head><body data-sw="../sw.js"><a class="skip" href="#main">Skip to content</a><header class="top"><div class="wrap"><a class="brand" href="../index.html">✧ Foster + Navi / HTML Atlas</a><nav aria-label="Primary"><a href="../index.html#categories">41 topic labs</a><a href="../index.html#integrations">22 integrations</a><a href="../index.html#about">How it works</a></nav></div></header><main id="main" class="wrap"><header class="hero"><div class="eyebrow">Topic 04/41 · self-contained HTML lab</div><h1>Advanced forms &amp; data entry</h1><p class="lead">Accessible input validation and typed submissions</p><div class="toolbar no-print"><label class="row"><input type="checkbox" id="completed"> Mark this page complete</label><span id="progress-note" class="fineprint" role="status"></span><button type="button" onclick="window.print()">Print / save PDF</button></div></header><div class="callout"><strong>Working demonstration:</strong> Accessible input validation and typed submissions. Try the control below, inspect the code, then adapt the implementation prompt.</div><section class="panel" id="live"><h2>Interactive lab</h2><div class="demo"><form id="field-form"><fieldset><legend>Record a plant observation</legend><label for="plant">Plant name (2+ characters)</label><input id="plant" name="plant" minlength="2" required><label for="count">Observed plants (0–1000)</label><input id="count" name="count" type="number" min="0" max="1000" required><label for="when">Observation date</label><input id="when" name="when" type="date" required><div class="toolbar"><button type="submit">Validate and serialize</button><button type="reset">Reset</button></div></fieldset></form><output id="form-result" aria-live="polite"></output></div></section><div class="two"><section class="panel"><h2>Feature inventory</h2><ul><li>input</li><li>fieldset</li><li>FormData</li><li>validity</li><li>constraints</li><li>form UX</li></ul></section><section class="panel"><h2>Acceptance tests</h2><ul><li>Open the file and interact with the demonstration</li><li>Verify its output changes in response to input</li><li>Check behavior with keyboard navigation</li><li>Reload to test persistence if relevant</li><li>Inspect included implementation source</li><li>Test offline via a local file</li><li>Check capability and permission fallback</li><li>Inspect output for untrusted-input safety</li></ul></section></div><section class="panel"><h2>Support, limits & safety</h2><p>This example runs locally in your browser. Check browser compatibility, accessibility, and all relevant security constraints before adapting it.</p><p class="fineprint">This laboratory demonstrates a bounded local example. A capability test is not proof of full browser interoperability. External services, user permissions, device access, and production security require separate verification.</p></section><section class="panel" id="prompt"><h2>Copyable implementation prompt</h2><p class="hint">Customize this instruction for your own website; verify the result rather than assuming it works.</p><pre id="ai-prompt">Upgrade my website using Advanced forms &amp; data entry. Scope: Accessible input validation and typed submissions. Explicitly consider input, fieldset, FormData, validity, constraints, form UX. Prefer native HTML and documented browser APIs; keep the core feature usable offline wherever possible. Implement a genuine working demonstration and a non-JavaScript reading fallback. Provide accessible keyboard interaction, reduced-motion support where relevant, feature detection, graceful degradation, mobile layouts, printable content, a security/privacy assessment and clearly labeled external requirements. Explain what is fully implemented versus simulated or unavailable. Include tests and preserve existing user data during upgrades.</pre><button type="button" id="copy-prompt">Copy prompt</button> <span id="copy-state" role="status"></span></section><details class="panel" id="source"><summary>Inspect the exact JavaScript running this demonstration</summary><pre id="source-code">JavaScript required to view source in this pane. The HTML file itself contains the implementation.</pre></details><footer><p><strong>Foster + Navi</strong> · Offline-friendly, progressive enhancement and user-controlled data. Educational reference, not an audited production component. Local records are not a substitute for backups.</p><p><a href="../index.html">← Back to atlas</a> · <a href="../README.md">README & attribution</a> · No trackers or external runtime dependencies.</p><p class="fineprint">Zero-Harm &amp; Anti-Inversion: built to inform and empower, not manipulate, surveil or coerce. No hidden data collection, no dark patterns, no auto-send — any repurposing against that intent contradicts this file’s design.</p><noscript>JavaScript is disabled. The explanations and feature inventories remain readable; interactive demonstrations, persistence and completion tracking require JavaScript.</noscript></footer></main><script>'use strict';
+const $=(s,root=document)=>root.querySelector(s);
+const $$=(s,root=document)=>Array.from(root.querySelectorAll(s));
+const safe=(v)=>String(v??'');
+const say=(v,id='#status')=>{let e=$(id);if(e)e.textContent=safe(v)};
+/* === Atlas Store: IndexedDB-first, localStorage-fallback, fully offline ===
+   PURPOSE — persists atlas-wide state (page-complete list, notes, HUD/XP,
+   streak, badges, and a settings stub for language/theme) so progress
+   survives reloads and works with no network connection at all.
+   HOW IT WORKS — every read/write tries IndexedDB first (bigger quota,
+   structured, still available offline). If IndexedDB throws or is missing
+   (older browser, some private-browsing modes, some file:// contexts) it
+   falls back to localStorage automatically, and every write also mirrors
+   into localStorage as a second safety net either way.
+   HOW TO EXTEND — add new keys to the object getState() returns (e.g.
+   s.settings.lang for a future translation, s.hud for new badges); call
+   saveState(s) with the whole object and every page that reads that key
+   will pick it up the same way. Nothing here needs a server.
+   EXPECTED OUTCOME — getState()/saveState() behave like a tiny async
+   key-value store; the atlas keeps working with zero code changes if
+   IndexedDB is unavailable. */
+const ATLAS_DB='foster_navi_atlas_db',ATLAS_STORE='kv',ATLAS_KEY='foster_navi_atlas_v1';
+let _atlasDbPromise=null;
+function openAtlasDB(){
+  if(_atlasDbPromise)return _atlasDbPromise;
+  _atlasDbPromise=new Promise(resolve=>{
+    if(!('indexedDB'in window)){resolve(null);return}
+    try{
+      const req=indexedDB.open(ATLAS_DB,1);
+      req.onupgradeneeded=()=>{try{req.result.createObjectStore(ATLAS_STORE)}catch{}};
+      req.onsuccess=()=>resolve(req.result);
+      req.onerror=()=>resolve(null);
+      req.onblocked=()=>resolve(null);
+    }catch{resolve(null)}
+  });
+  return _atlasDbPromise;
+}
+function idbGet(key){
+  return openAtlasDB().then(db=>new Promise(resolve=>{
+    if(!db){resolve(undefined);return}
+    try{const tx=db.transaction(ATLAS_STORE,'readonly'),rq=tx.objectStore(ATLAS_STORE).get(key);
+      rq.onsuccess=()=>resolve(rq.result);rq.onerror=()=>resolve(undefined)}catch{resolve(undefined)}
+  }));
+}
+function idbSet(key,value){
+  return openAtlasDB().then(db=>new Promise(resolve=>{
+    if(!db){resolve(false);return}
+    try{const tx=db.transaction(ATLAS_STORE,'readwrite');tx.objectStore(ATLAS_STORE).put(value,key);
+      tx.oncomplete=()=>resolve(true);tx.onerror=()=>resolve(false)}catch{resolve(false)}
+  }));
+}
+async function getState(){
+  let fromIdb=await idbGet(ATLAS_KEY);
+  if(fromIdb&&typeof fromIdb==='object')return fromIdb;
+  try{
+    let parsed=JSON.parse(localStorage.getItem(ATLAS_KEY)||'{}');
+    if(!parsed||typeof parsed!=='object')parsed={};
+    if(Object.keys(parsed).length)idbSet(ATLAS_KEY,parsed);
+    return parsed;
+  }catch{return {}}
+}
+async function saveState(s){
+  let ok=await idbSet(ATLAS_KEY,s);
+  try{localStorage.setItem(ATLAS_KEY,JSON.stringify(s))}catch{}
+  /* Tell any listener on this page a save just landed, instead of letting
+     two independent handlers both read/write state off the same click and
+     race each other. Harmless no-op on pages with no listener attached. */
+  try{dispatchEvent(new CustomEvent('atlas:statechange',{detail:s}))}catch{}
+  return ok||true;
+}
+async function markDone(id,on){
+  let s=await getState();
+  s.done=Array.isArray(s.done)?s.done:[];
+  s.done=on?[...new Set([...s.done,id])]:s.done.filter(x=>x!==id);
+  await saveState(s);
+  return s.done.length;
+}
+/* Visit-streak tracker for the HUD, updated from every page (not just the
+   index) so working through any lab on a given day keeps the streak alive.
+   Compares local calendar dates only (YYYY-MM-DD), so it is not sensitive
+   to the exact time of day. Runs at most once per page load. EXTEND: read
+   (await getState()).hud on the index page to render level/streak/badges. */
+async function touchStreak(){
+  let s=await getState();
+  let today=new Date();
+  let ymd=today.getFullYear()+'-'+String(today.getMonth()+1).padStart(2,'0')+'-'+String(today.getDate()).padStart(2,'0');
+  let h=s.hud&&typeof s.hud==='object'?s.hud:{streak:0,longestStreak:0,lastVisit:null};
+  if(h.lastVisit===ymd){/* already counted today */}
+  else{
+    let prevWasYesterday=false;
+    if(h.lastVisit){
+      let prev=new Date(h.lastVisit+'T00:00:00');
+      let diffDays=Math.round((today.setHours(0,0,0,0)-prev.setHours(0,0,0,0))/86400000);
+      prevWasYesterday=diffDays===1;
+    }
+    h.streak=prevWasYesterday?(h.streak||0)+1:1;
+    h.longestStreak=Math.max(h.longestStreak||0,h.streak);
+    h.lastVisit=ymd;
+    s.hud=h;
+    await saveState(s);
+  }
+}
+function download(name,text,type='application/json'){const a=document.createElement('a'),u=URL.createObjectURL(new Blob([text],{type}));a.href=u;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(u),1500)}
+/* Gentle client-side pacing: ignores repeat calls within `ms` so rapid
+   clicks/keystrokes on save/search/import controls cannot spam storage
+   writes or thrash the UI. A courtesy limiter, not a security control. */
+function gentleLimit(fn,ms=350){let last=0;return(...args)=>{const now=Date.now();if(now-last<ms)return;last=now;return fn(...args)}}
+async function initChrome(id){
+  const box=$('#completed');
+  if(box){
+    const st=await getState();
+    box.checked=(st.done||[]).includes(id);
+    box.addEventListener('change',gentleLimit(async()=>{
+      await markDone(id,box.checked);
+      const note=$('#progress-note');if(note)note.textContent=box.checked?'Marked complete locally.':'Completion removed.';
+    },300));
+  }
+  const copy=$('#copy-prompt');
+  if(copy)copy.onclick=async()=>{const t=$('#ai-prompt').textContent;try{await navigator.clipboard.writeText(t);$('#copy-state').textContent='Copied.'}catch{$('#copy-state').textContent='Select and copy the prompt manually.'}};
+  const src=$('#source-code'),run=$('#demo-script');
+  if(src&&run)src.textContent=run.textContent;
+  if('serviceWorker'in navigator&&(location.protocol==='https:'||['localhost','127.0.0.1','[::1]'].includes(location.hostname))){
+    navigator.serviceWorker.register(document.body.dataset.sw).catch(()=>{});
+  }
+  touchStreak().catch(()=>{});
+}
+initChrome("labs/advanced-forms.html");
+</script><script id="demo-script">$('#field-form').onsubmit=e=>{e.preventDefault();let f=e.currentTarget;if(!f.reportValidity())return;$('#form-result').textContent=JSON.stringify(Object.fromEntries(new FormData(f)),null,2)};$('#field-form').onreset=()=>$('#form-result').textContent='Form reset.';</script></body></html>
